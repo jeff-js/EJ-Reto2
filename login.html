@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Platzivideo - Login</title>
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="libraries/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="d-flex flex-column justify-content-between min-vh-100">
+        <!-- Header -->
+        <header class="bg-green">
+            <nav class="d-flex justify-content-between align-items-center">
+                <a href="">
+                    <img id="logo" src="images/logo-platzi-video-BW2.png" alt="Platzivideo">
+                </a>
+            </nav>
+        </header>
+        <!-- EOF - Header -->
+
+        <!-- Login -->
+        <section class="login flex-grow-1 pt-4 d-flex justify-content-center">
+            <div class="login__container d-flex flex-column justify-content-around">
+                <h4>Inicia sesión</h4>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Correo">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                    </div>
+                    <button type="submit" class="btn btn-light btn-block mt-5">Entrar</button>
+                    <div class="d-flex justify-content-between mt-4">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label" for="remember">Recuérdame</label>
+                        </div>
+                        <a href="">Olvidé mi contraseña</a>
+                    </div>
+                </form>
+                <div class="login__social-media d-flex flex-column align-items-center">
+                    <div class="mb-1">
+                        <i class="fab fa-google"></i>
+                        <a href="#">Inicia sesión con Google</a>
+                    </div>
+                    <div class="mb-1">
+                        <i class="fab fa-facebook-f"></i>
+                        <a href="#">Inicia sesión con Facebook</a>
+                    </div>
+                </div>
+                <div class="text-center">No tienes ninguna cuenta <a class="font-weight-bold" href="#">Regístrate</a>
+                </div>
+            </div>
+        </section>
+        <!-- EOF - Login -->
+
+        <!-- Footer -->
+        <footer class="footer mt-4 pb-4 pt-4">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 col-md">
+                        <a href="#">Terminos de uso</a>
+                    </div>
+                    <div class="col-12 col-md">
+                        <a href="#">Declaración de privacidad</a>
+                    </div>
+                    <div class="col-12 col-md">
+                        <a href="#">Centro de ayuda</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- EOF - Footer -->
+    </div>
+</body>
+
+</html>

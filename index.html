@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Platzivideo</title>
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="libraries/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="d-flex justify-content-between align-items-center">
+            <a href="">
+                <img id="logo" src="images/logo-platzi-video-BW2.png" alt="Platzivideo">
+            </a>
+            <div class="header__menu d-flex flex-column align-items-end">
+                <div class="header__menu--profile d-flex align-items-center pb-2">
+                    <i class="fas fa-user-circle fa-2x"></i>
+                    <span class="pl-2">Perfil</span>
+                </div>
+                <ul class="text-right">
+                    <li><a href="#">Cuenta</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- EOF - Header -->
+
+    <!-- Search Bar -->
+    <section class="search-bar d-flex flex-column justify-content-center align-items-center">
+        <h4 class="text-white">¿Qué quieres ver hoy?</h4>
+        <form class="mt-2 w-75">
+            <input type="text" class="search-input w-100" placeholder="Buscar...">
+        </form>
+    </section>
+    <!-- EOF - Search Bar -->
+
+    <!-- Categories -->
+    <section class="categories">
+        <!-- Slider  -->
+        <h5 class="categories__title text-white">Mi lista</h5>
+        <section class="slider">
+            <div class="slider__container my-4">
+                <div class="card">
+                    <img class="card__cover" src="images/slider/galactica.jpeg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Battlestar Galactica</div>
+                        <div class="card__details--subtitle">Año: <span>2004</span> - <span>76</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/start-trek.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">All Star Trek</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XXX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/rick-and-morty.png" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Rick and Morty</div>
+                        <div class="card__details--subtitle">Año: <span>2013</span> - <span>XXX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/batman.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">The Dark Knight</div>
+                        <div class="card__details--subtitle">Año: <span>2008</span> - <span>152</span> minutos</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/naruto.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Naruto shippuden</div>
+                        <div class="card__details--subtitle">Año: <span>2017</span> - <span>500</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/hellboy.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Hellboy</div>
+                        <div class="card__details--subtitle">Año: <span>2017</span> - <span>XXX</span> minutos</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/mr-robot.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Mr Robot</div>
+                        <div class="card__details--subtitle">Año: <span>2015</span> - <span>XX</span> episodios</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- EOF - Slider -->
+
+        <!-- Slider  -->
+        <h5 class="categories__title text-white">Tendencias</h5>
+        <section class="slider">
+            <div class="slider__container my-4">
+                <div class="card">
+                    <img class="card__cover" src="images/slider/house.png" alt="">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">House</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/stranger-things.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Stranger Things</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XXX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/la-casa-de-papel.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">La Casa de Papel</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XXX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/escuadron-suicida.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Escuadron Suicida</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XXX</span> minutos</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/boys.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">The Boys</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XXX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/jack_ryan.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Jack Ryan de Tom Clancy</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XXX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/the_god_doctor.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">The God Doctor</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XX</span> episodios</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- EOF - Slider -->
+
+        <!-- Slider  -->
+        <h5 class="categories__title text-white">Originales Platzivideo</h5>
+        <section class="slider">
+            <div class="slider__container my-4">
+                <div class="card">
+                    <img class="card__cover" src="images/slider/mr-robot.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Mr Robot</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/jack_ryan.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Jack Ryan de Tom Clancy</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/the_god_doctor.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">The God Doctor</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XXX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/naruto.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Naruto shippuden</div>
+                        <div class="card__details--subtitle">Año: <span>2017</span> - <span>500</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/rick-and-morty.png" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Rick and Morty</div>
+                        <div class="card__details--subtitle">Año: <span>2013</span> - <span>XXX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/heroes.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">Heroes</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XX</span> episodios</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__cover" src="images/slider/boys.jpg" alt="galactica">
+                    <div class="card__details">
+                        <div class="card__details--actions">
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button type="button" class="btn btn-success btn-sm rounded-circle">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card__details--title">The Boys</div>
+                        <div class="card__details--subtitle">Año: <span>XXXX</span> - <span>XX</span> episodios</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- EOF - Slider -->
+    </section>
+    <!-- EOF - Categories -->
+
+    <!-- Footer -->
+    <footer class="footer pb-4 pt-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md">
+                    <a href="#">Terminos de uso</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Declaración de privacidad</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Centro de ayuda</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- EOF - Footer -->
+</body>
+
+</html>
